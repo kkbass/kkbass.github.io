@@ -1,0 +1,157 @@
+.modal
+
+   .modal-state
+      display: none
+
+   .modal-state:checked + .modal-fade-screen
+      opacity: 1
+      visibility: visible
+
+   .modal-state:checked + .modal-fade-screen .modal-inner
+      top: 0.5em
+
+   // label
+   //    cursor: pointer
+   //    margin-bottom: 0
+
+// .modal-open
+//    overflow: hidden
+
+
+// Based on code by Kasper Mikiewicz
+
+
+
+
+.modal-fade-screen
+   +position(fixed, 0)
+   background-color: rgba(#000, 0.85)
+   opacity: 0
+   transition: opacity 0.3s ease
+   visibility: hidden
+   z-index: 99999999999
+   display: flex
+   align-items: center
+   // padding-top: 5rem
+
+   //below is unknown
+   .modal-bg
+      +position(absolute, 0)
+      cursor: pointer
+
+.modal-inner
+   background-color: $lights
+   margin: auto
+   padding: 12px
+   transition: opacity 0.3s ease
+   width: 75%
+   max-width: 800px
+   // max-height: 95%
+
+.modal-inner-border
+   +size(100%)
+   border: 1px solid $primary
+   position: relative
+   +clearfix
+
+.modal-close
+   +position(absolute, 1rem 1.1rem null null)
+   +size(20px)
+   // background: $modal-background
+   cursor: pointer
+
+   &::after,
+   &::before
+      +position(absolute, 3px 3px 0 50%)
+      height: 20px
+      width: 3px
+      background: $primary
+      content: ""
+      display: block
+      margin: -3px 0 0 -1px
+      transform: rotate(45deg)
+      transition: 0.3s ease
+
+   &:hover::after,
+   &:hover::before
+      background: darken($primary, 20%)
+
+   &::before
+      transform: rotate(-45deg)
+
+
+
+.contact-head-container
+   +clearfix
+   width: 100%
+   padding: 30px
+
+   img
+      +size(150px)
+      border: 1px solid darken($lights, 8%)
+      float: left
+      border-radius: 80px
+
+   .text-container
+      margin-left: 20px
+      float: left
+
+      h2
+         margin-bottom: 0.5rem
+
+      p
+         margin-left: 6px
+
+form
+   +clearfix
+
+.form-container
+   padding: 0 30px
+   width: 100%
+   height: 110px
+   margin-bottom: 10px
+
+   .left
+      width: 49%
+      display: inline-block
+
+      input
+         margin: 0
+         height: 50px
+         border-radius: 0
+
+      input[placeholder]
+         color: lighten($darks, 20%)
+
+      input:nth-child(1n)
+         margin-bottom: 10px
+
+   textarea
+      width: 49%
+      height: 100%
+      margin-bottom: 0
+      border-radius: 0
+      float: right
+
+   textarea[placeholder]
+      color: lighten($darks, 20%)
+
+input[type="submit"]
+   float: right
+   height: 50px
+   width: 23%
+   color: $lights
+   background-color: $primary
+   border: none
+   border-radius: 0
+   text-transform: uppercase
+   font-weight: 400
+   margin: 0 30px 30px 0
+   transition: 0.3s ease
+
+   &:hover
+      background-color: darken($primary, 10%)
+
+   &:focus
+      outline: none
+      background-color: darken($primary, 15%)

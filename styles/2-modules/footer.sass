@@ -1,0 +1,38 @@
+footer
+   background-color: $lights
+   height: 200px
+
+   .footer
+      height: 100%
+      display: flex
+      align-items: center
+
+   .left
+      width: 125px
+
+   .modal
+      margin-left: auto
+
+      .modal-trigger
+         padding: 16px 60px
+         color: $primary
+         background-color: rgba(0,0,0,0)
+         border-radius: 0
+         border: 2px solid $primary
+         transition: 0.3s
+         font-size: 1.3rem
+         font-weight: 400
+         text-transform: uppercase
+         letter-spacing: 1px
+         margin-top: -4px
+
+         &:hover
+            background-color: $primary
+            color: $lights
+            border-radius: 0
+
+         &:focus
+            background-color: darken($primary, 10%)
+            color: $lights
+            border-radius: 0
+            outline: none

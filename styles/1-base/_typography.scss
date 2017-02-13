@@ -1,0 +1,66 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: modular-scale(1);
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+   color: $primary;
+   text-align: center;
+   font-size: 4rem;
+   font-weight: 300;
+   letter-spacing: 0.3rem;
+   text-transform: uppercase;
+   padding-top: 90px;
+   padding-bottom: 30px;
+   margin: 0
+}
+
+h2 {
+   color: $primary;
+   font-size: 2.9rem;
+   font-weight: 300;
+   letter-spacing: 0.2rem;
+   text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+  -webkit-font-smoothing: antialiased;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
