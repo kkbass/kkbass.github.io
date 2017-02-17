@@ -752,13 +752,14 @@ nav {
       margin-bottom: 5px;
       display: inline-block; }
     .song .right .title {
-      margin-top: 20px; }
+      font-style: italic; }
     .song .right .performer {
-      padding-left: 6px; }
+      margin-top: 20px;
+      padding-right: 8px; }
     .song .right .song-info {
       margin-bottom: 20px; }
 
-.song:nth-of-type(4) {
+.song:nth-of-type(3) {
   border-bottom: 1px solid #C9A15C;
   margin-bottom: 135px; }
 
