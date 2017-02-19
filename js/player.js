@@ -222,7 +222,7 @@ function createAudioElements() {
  * create audio players for each file in files */
 function createAudioPlayers() {
 	for (var f in files) {
-		var playerString = "<div id=\"audioplayer-" + f + "\" class=\"audioplayer\"><button id=\"playbutton-" + f + "\" class=\"play playbutton\"></button><div id=\"timeline-" + f + "\" class=\"timeline\"><div id=\"playhead-" + f + "\" class=\"playhead\"></div></div></div>";
+		var playerString = "<div id=\"audioplayer-" + f + "\" class=\"audioplayer\"><div id=\"playbutton-" + f + "\" class=\"play playbutton\"></div><div id=\"timeline-" + f + "\" class=\"timeline\"><div id=\"playhead-" + f + "\" class=\"playhead\"></div></div></div>";
 		$("#audio-players").append(playerString);
 	}
 }
