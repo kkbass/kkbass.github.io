@@ -837,11 +837,11 @@ nav {
     .section-recordings h1 {
       font-size: 2rem;
       letter-spacing: 0.2rem; } }
-.audioplayer .playbutton {
-  height: 30px;
-  width: 30px;
-  margin: 30px 18px; }
-
+@media (max-width: 380px) {
+  .audioplayer .playbutton {
+    height: 30px;
+    width: 30px;
+    margin: 30px 14px; } }
 .section-bio {
   background-image: url(../img/bio-bg.jpg);
   background-position: center;
@@ -963,7 +963,7 @@ footer {
 @media (max-width: 350px) {
   footer .modal-trigger {
     margin-top: 2px;
-    border: 2px solid #C9A15C;
+    border: 1px solid #C9A15C;
     font-size: 0.9rem;
     padding: 10px 16px; } }
 .modal .modal-state {
