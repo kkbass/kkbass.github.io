@@ -29,7 +29,7 @@
    opacity: 0
    transition: opacity 0.3s ease
    visibility: hidden
-   z-index: 99999999999
+   z-index: 9999
    display: flex
    align-items: center
    // padding-top: 5rem
@@ -155,3 +155,109 @@ input[type="submit"]
    &:focus
       outline: none
       background-color: darken($primary, 15%)
+
+
+
+///////////////////
+// Media Queries //
+///////////////////
+
+@media (max-width: 830px)
+   .modal-inner
+      padding: 8px
+
+   .contact-head-container
+      padding: 26px
+
+      img
+         +size(100px)
+
+      .text-container
+         margin-left: 16px
+
+         h2
+            font-size: 1.9rem
+            letter-spacing: 1
+
+         p
+            font-size: 0.86rem
+            margin-left: 4px
+
+   .form-container
+      padding: 0 26px
+      height: 210px
+
+      .left
+         width: 100%
+
+         input
+            height: 44px
+
+         input[placeholder]
+            font-size: 0.8rem
+
+         input:nth-child(1n)
+            margin-bottom: 8px
+
+      textarea
+         height: 49%
+         width: 100%
+         float: none
+
+      textarea[placeholder]
+         font-size: 0.8rem
+
+   input[type="submit"]
+      float: right
+      height: 44px
+      margin: 0 26px 26px 0
+      font-size: 0.8rem
+
+
+@media (max-width: 700px)
+   .contact-head-container
+      padding-bottom: 10px
+
+      img
+         +size(80px)
+
+      .text-container
+         margin-left: 12px
+
+         h2
+            font-size: 1.7rem
+            letter-spacing: 0.8
+            margin-bottom: 4px
+
+         p
+            font-size: 0.8rem
+            margin-left: 4px
+
+   .form-container
+      height: 180px
+
+      .left
+
+         input
+            height: 40px
+
+         input:nth-child(1n)
+            margin-bottom: 6px
+
+   input[type="submit"]
+      height: 40px
+
+
+@media (max-width: 610px)
+   .contact-head-container
+
+      img
+         display: none
+
+      .text-container
+         margin-left: auto
+         text-align: center
+         float: none
+
+.modal-close
+   +position(absolute, 0.6rem 0.7rem null null)

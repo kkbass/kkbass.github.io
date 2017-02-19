@@ -1,30 +1,100 @@
 .section-bio
-   background-image: url(../img/bio-bg.jpg)
-   background-position: center
-   background-size: cover
-   width: 100%
-   border-bottom: 6px solid $primary
+  background-image: url(../img/bio-bg.jpg)
+  background-position: center
+  background-size: cover
+  width: 100%
+  border-bottom: 6px solid $primary
+
+  h1
+    border-bottom: 1px solid $primary
+    margin:
+      right: 30px
+      left: 30px
 
 .bio
-   height: 100%
-   border-top: 1px solid $primary
-   padding:
-      top: 40px
-      bottom: 120px
-   color: $primary
-   +clearfix
+  height: 100%
+  padding:
+    top: 40px
+    bottom: 120px
+  color: $primary
+  +clearfix
 
-   .left
-      max-width: 63%
-      margin-right: 9%
-      float: left
+  .left
+    max-width: 63%
+    margin-right: 9%
+    float: left
 
+    p
+      font-size: 1.4rem
+
+  .right
+    max-width: 27%
+    float: left
+
+    li
+      margin-bottom: 0.8rem
+
+
+
+///////////////////
+// Media Queries //
+///////////////////
+
+@media (max-width: 1100px)
+  .bio
+
+    .left
       p
-         font-size: 1.4rem
+        font-size: 1.1rem
 
-   .right
-      max-width: 27%
-      float: left
+    .right
+      li
+        font-size: 0.9rem
+
+@media (max-width: 768px)
+  .section-bio
+
+    h1
+      font-size: 3rem
+
+@media (max-width: 600px)
+  .section-bio
+
+    h1
+      font-size: 2rem
+      letter-spacing: 0.2rem
+
+  .bio
+
+    .left
+      p
+        font-size: 0.9rem
+
+    .right
+      li
+        font-size: 0.8rem
+
+      h6
+        font-size: 1rem
+
+@media (max-width: 530px)
+  .bio
+
+    .left
+      float: none
+      margin-right: 0px
+      max-width: 100%
+      text-align: center
+
+    .right
+      max-width: 100%
+      float: none
+
+      h6
+        margin:
+          top: 70px
+          bottom: 20px
+        text-align: center
 
       li
-         margin-bottom: 0.8rem
+        text-align: center

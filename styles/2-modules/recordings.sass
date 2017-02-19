@@ -65,7 +65,7 @@
     background: $lights
     position: absolute
     bottom: 0
-    z-index: 100
+    z-index: 5
 
     .playhead
       width: 4px
@@ -79,38 +79,12 @@
   margin-bottom: 135px
 
 
-
-
-
-
-
-  .button-container
-    flex: 1
-    display: flex
-    align-items: center
-    justify-content: center
-
-    button
-      +size(48px)
-
-      &:active
-        +size(48px)
-
-    i
-      font-size: 48px
-      margin-right: 6px
-
-
-
-
-
-
 ///////////////////
 // Media Queries //
 ///////////////////
 
 @media (max-width: 1100px)
-  .song
+  .audioplayer
 
     .right
 
@@ -132,8 +106,6 @@
 @media (max-width: 600px)
   .section-recordings
     padding: 8px
-
-
 
     h1
       font-size: 2rem

@@ -1,38 +1,74 @@
 footer
-   background-color: $lights
-   height: 200px
+  background-color: $lights
+  height: 200px
 
-   .footer
-      height: 100%
-      display: flex
-      align-items: center
+  .footer
+    height: 100%
+    display: flex
+    align-items: center
 
-   .left
-      width: 125px
+  .left
+    width: 125px
 
-   .modal
-      margin-left: auto
+  .modal
+    margin-left: auto
 
-      .modal-trigger
-         padding: 16px 60px
-         color: $primary
-         background-color: rgba(0,0,0,0)
-         border-radius: 0
-         border: 2px solid $primary
-         transition: 0.3s
-         font-size: 1.3rem
-         font-weight: 400
-         text-transform: uppercase
-         letter-spacing: 1px
-         margin-top: -4px
+  .modal-trigger
+    padding: 16px 60px
+    color: $primary
+    background-color: rgba(0,0,0,0)
+    border-radius: 0
+    border: 2px solid $primary
+    transition: 0.3s
+    font-size: 1.3rem
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 1px
+    margin-top: -4px
 
-         &:hover
-            background-color: $primary
-            color: $lights
-            border-radius: 0
+    &:hover
+      background-color: $primary
+      color: $lights
+      border-radius: 0
 
-         &:focus
-            background-color: darken($primary, 10%)
-            color: $lights
-            border-radius: 0
-            outline: none
+    &:focus
+      background-color: darken($primary, 10%)
+      color: $lights
+      border-radius: 0
+      outline: none
+
+
+
+///////////////////
+// Media Queries //
+///////////////////
+
+@media (max-width: 600px)
+  footer
+    height: 140px
+
+    .left
+      width: 100px
+
+    .modal-trigger
+      font-size: 1rem
+      padding: 10px 30px
+
+@media (max-width: 530px)
+  footer
+
+    .left
+      width: 96px
+
+    .modal-trigger
+      font-size: 0.9rem
+      padding: 10px 30px
+
+@media (max-width: 350px)
+  footer
+
+    .modal-trigger
+      margin-top: 2px
+      border: 2px solid $primary
+      font-size: 0.9rem
+      padding: 10px 16px
