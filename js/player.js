@@ -4,7 +4,7 @@
 document.addEventListener("DOMContentLoaded", theDOMHasLoaded, false);
 
 // array of audio files (stored in a folder called music)
-var files = ["nothingthatisnotthereandthenothingthatis.mp3", // 0
+var files = ["Morgendammerungsmusik.mp3", // 0
 			"GubaidulinaPantomime.mp3", // 1
 			"XenakisRoscobeck.mp3" // 2
 			];
